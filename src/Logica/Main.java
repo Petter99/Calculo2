@@ -8,6 +8,9 @@ package Logica;
  *
  * @author canil
  */
+
+//Esta clase Main solo es para las pruebas si todo jalaba al 100
+//Despues se tendra que eliminar
 public class Main {
     public static void main(String[] args) {
         // Crea una instancia de ProyectoCuantificacion para gestionar el proyecto.

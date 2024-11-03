@@ -34,10 +34,11 @@ public class Main {
         
         ventana.setVisible(true);
         ventana.setLocationRelativeTo(null);
+        ventana.setSize(800,600);
         //asegura que el programa deje de ejecutarse al cerrar la ventana
          ventana.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
          
-         ventana.pack();
+        
     }
 }
 

@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Logica;
-
+import GUI.Inicio;
 /**
  *
  * @author canil
@@ -28,6 +28,16 @@ public class Main {
         
         // Calcula y muestra la cantidad total de materiales.
         proyecto.calcularTotalMateriales();
+        
+        //Se crea un objeto ventana y se hace visible (menu inicial)
+        Inicio ventana = new Inicio();
+        
+        ventana.setVisible(true);
+        ventana.setLocationRelativeTo(null);
+        //asegura que el programa deje de ejecutarse al cerrar la ventana
+         ventana.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
+         
+         ventana.pack();
     }
 }
 

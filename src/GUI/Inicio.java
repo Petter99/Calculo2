@@ -47,18 +47,18 @@ public class Inicio extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(28, 78, 216));
-        jButton1.setText("Cemento,  arena, piedrin");
+        jButton1.setText("Block");
         jButton1.setToolTipText("");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 398, -1, 59));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 398, 200, -1));
 
         jButton2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(28, 78, 216));
-        jButton2.setText("Acero");
+        jButton2.setText("Solera");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -68,7 +68,7 @@ public class Inicio extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(28, 78, 216));
-        jButton3.setText("Block");
+        jButton3.setText("Columna");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);

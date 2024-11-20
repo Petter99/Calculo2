@@ -48,6 +48,7 @@ public class Solera extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        txtResultado = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -130,16 +131,23 @@ public class Solera extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addComponent(jLabel1)
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel1)
-                .addContainerGap(475, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(141, Short.MAX_VALUE))
         );
 
         jLabel9.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -280,9 +288,11 @@ public class Solera extends javax.swing.JFrame {
             
             String resultado = this.calculadora.procesarSolera(hierro, largo, base, Altura, Peralte, est);
             System.out.println(resultado);
+            txtResultado.setText(resultado);
         } catch (NumberFormatException e) {
             double valor = 0.0; // Valor predeterminado
-            System.out.println("Texto no válido, asignando valor predeterminado: " + valor);
+            System.out.println("<html>Texto no válido, asignando valor predeterminado: " + valor+"<html>");
+            txtResultado.setText("<html>Texto no válido, asignando valor predeterminado: "+valor+"<html>");
         }
         
         
@@ -315,5 +325,6 @@ public class Solera extends javax.swing.JFrame {
     private javax.swing.JTextField metrosLineales;
     private javax.swing.JTextField noHierro;
     private javax.swing.JTextField peralte;
+    private javax.swing.JLabel txtResultado;
     // End of variables declaration//GEN-END:variables
 }

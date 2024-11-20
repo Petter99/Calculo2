@@ -15,7 +15,9 @@ public class Main {
     public static void main(String[] args) {
         
         //Se crea un objeto ventana y se hace visible (menu inicial)
-        Inicio ventana = new Inicio();
+        CalculadoraMaterial calculadora = new CalculadoraMaterial();
+        Inicio ventana = new Inicio(calculadora);
+        
         
         ventana.setVisible(true);
         ventana.setLocationRelativeTo(null);

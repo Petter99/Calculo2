@@ -27,22 +27,22 @@ public class Peralte extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        calcular = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        ancho = new javax.swing.JTextField();
+        CantVarillas = new javax.swing.JTextField();
+        metrosLineales = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        noHierro = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        est = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        altura = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -50,10 +50,15 @@ public class Peralte extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(239, 246, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setForeground(new java.awt.Color(0, 0, 255));
-        jButton1.setText("Calcular");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 360, 74, 52));
+        calcular.setBackground(new java.awt.Color(255, 255, 255));
+        calcular.setForeground(new java.awt.Color(0, 0, 255));
+        calcular.setText("Calcular");
+        calcular.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                calcularMouseClicked(evt);
+            }
+        });
+        jPanel1.add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 360, 74, 52));
 
         jLabel2.setForeground(new java.awt.Color(28, 78, 216));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -77,15 +82,15 @@ public class Peralte extends javax.swing.JFrame {
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Ancho");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 74, -1));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 249, 74, -1));
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 378, 74, -1));
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 249, 74, -1));
+        jPanel1.add(ancho, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 249, 74, -1));
+        jPanel1.add(CantVarillas, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 378, 74, -1));
+        jPanel1.add(metrosLineales, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 249, 74, -1));
 
         jLabel6.setForeground(new java.awt.Color(28, 78, 216));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Cantidad varillas");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 380, 74, -1));
+        jPanel1.add(noHierro, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 380, 74, -1));
 
         jLabel7.setForeground(new java.awt.Color(28, 78, 216));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -96,7 +101,7 @@ public class Peralte extends javax.swing.JFrame {
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Estrivo");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, 74, -1));
-        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 380, 74, -1));
+        jPanel1.add(est, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 380, 74, -1));
 
         jPanel2.setBackground(new java.awt.Color(28, 78, 216));
 
@@ -122,7 +127,7 @@ public class Peralte extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(564, 45, 220, 530));
-        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(166, 249, 74, -1));
+        jPanel1.add(altura, new org.netbeans.lib.awtextra.AbsoluteConstraints(166, 249, 74, -1));
 
         jLabel9.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(28, 78, 216));
@@ -146,6 +151,10 @@ public class Peralte extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void calcularMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_calcularMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_calcularMouseClicked
 
     /**
      * @param args the command line arguments
@@ -183,7 +192,11 @@ public class Peralte extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField CantVarillas;
+    private javax.swing.JTextField altura;
+    private javax.swing.JTextField ancho;
+    private javax.swing.JButton calcular;
+    private javax.swing.JTextField est;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -195,11 +208,7 @@ public class Peralte extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField metrosLineales;
+    private javax.swing.JTextField noHierro;
     // End of variables declaration//GEN-END:variables
 }

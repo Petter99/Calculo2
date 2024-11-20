@@ -4,6 +4,8 @@
  */
 package GUI;
 
+import Logica.CalculadoraMaterial;
+
 /**
  *
  * @author user
@@ -13,8 +15,10 @@ public class Inicio extends javax.swing.JFrame {
     /**
      * Creates new form Inicio
      */
-    public Inicio() {
+    CalculadoraMaterial calculadora;
+    public Inicio(CalculadoraMaterial calculadora) {
         initComponents();
+        this.calculadora = calculadora;
     }
 
     /**

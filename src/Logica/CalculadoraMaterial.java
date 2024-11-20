@@ -26,11 +26,12 @@ public class CalculadoraMaterial {
         return resultados;
     }
 
-    public void procesarSolera(int numeroHierro,double largo, double base, double altura, double peralte, double est) {
+    public String procesarSolera(int numeroHierro,double largo, double base, double altura, double peralte, double est) {
         Solera solera = new Solera(numeroHierro,largo, base, altura, peralte, est);
         String resultado = solera.mostrarDatos();
         agregarResultado(resultado);
         //System.out.println(resultado); // Para mostrar el resultado en consola o enviarlo a GUI
+        return resultado;
     }
 
     public void procesarColumna(int cantidadColumnas, int numeroHierro, double ancho, double largo, double altura, double esl, int cantidadVarillas) {

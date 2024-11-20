@@ -40,5 +40,12 @@ public class CalculadoraMaterial {
         agregarResultado(resultado);
         //System.out.println(resultado); // Para mostrar el resultado en consola o enviarlo a GUI
     }
+    
+    public String procesarBlock(double largo, double altura){
+        Block block = new Block(largo, altura);
+        String resultado = block.mostrarDatos();
+        agregarResultado(resultado);
+        return resultado;
+    }
 }
 

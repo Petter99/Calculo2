@@ -41,16 +41,17 @@ public class Inicio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(239, 246, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 102, 0));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(28, 78, 216));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("ARCHIMETRICS");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 40, -1, -1));
 
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(28, 78, 216));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Block");
         jButton1.setToolTipText("");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -60,8 +61,9 @@ public class Inicio extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 398, 200, -1));
 
+        Solera.setBackground(new java.awt.Color(0, 0, 0));
         Solera.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        Solera.setForeground(new java.awt.Color(28, 78, 216));
+        Solera.setForeground(new java.awt.Color(255, 255, 255));
         Solera.setText("Solera");
         Solera.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -75,8 +77,9 @@ public class Inicio extends javax.swing.JFrame {
         });
         jPanel1.add(Solera, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 148, 194, -1));
 
+        jButton3.setBackground(new java.awt.Color(0, 0, 0));
         jButton3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(28, 78, 216));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Columna");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,13 +88,14 @@ public class Inicio extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 266, 194, -1));
 
-        jPanel2.setBackground(new java.awt.Color(219, 234, 254));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
 
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(28, 78, 216));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Acerca de");
 
         jLabel3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("<html>herramienta sencilla que calcula de manera precisa el uso de materiales para la construcción utilizando integrales, facilitando la planificación y optimización de proyectos<html>");
         jLabel3.setToolTipText("");
@@ -131,7 +135,7 @@ public class Inicio extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();

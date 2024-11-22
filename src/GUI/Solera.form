@@ -57,10 +57,11 @@
                               <Component id="jLabel3" min="-2" pref="74" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="cantVarillas" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
-                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
+                              <Component id="calcular" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="50" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -80,7 +81,6 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jLabel5" pref="74" max="32767" attributes="0"/>
                       <Component id="peralte" max="32767" attributes="0"/>
-                      <Component id="calcular" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="70" max="32767" attributes="0"/>
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
@@ -127,8 +127,9 @@
                               <Component id="cantVarillas" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="noHierro" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="Estribo" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="calcular" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                          <Component id="calcular" min="-2" pref="52" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="40" max="32767" attributes="0"/>
@@ -293,7 +294,7 @@
             <Component class="javax.swing.JLabel" name="txtResultado">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="18" style="0"/>
+                  <Font name="Dialog" size="14" style="0"/>
                 </Property>
               </Properties>
             </Component>

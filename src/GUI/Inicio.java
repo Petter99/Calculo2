@@ -138,7 +138,7 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Block venblock = new Block(calculadora);
+        Block venblock = new Block(this.calculadora);
         venblock.setVisible(true);
         venblock.setLocationRelativeTo(null);
         venblock.setSize(800,600);

@@ -53,8 +53,8 @@ public class Solera {
 
     public String mostrarDatos() {
         calcularMaterial();
-        return "<html>Solera [Cantidad de Varillas de "+hierro+": "+cantVarillas+" Cantidad de varillas de '1/4' = '000'"+
-                "Cantidad de Arena: "+arena+"Cantidad de Piedrin: "+piedrin+"Cantidad de Cemento: "+cemento+"]<html>";
+        return "<html>Solera  Cantidad de Varillas de "+hierro+": "+cantVarillas+ " Cantidad de varillas de '1/4' = '000' "+
+                "Cantidad de Arena: "+arena+" Cantidad de Piedrin: "+piedrin+" Cantidad de Cemento: "+cemento+" <html>";
     }
     
     private String tipohierro(int num){

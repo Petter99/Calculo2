@@ -36,6 +36,7 @@ public class Block extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         metrosLineales1 = new javax.swing.JTextField();
+        calcular = new javax.swing.JButton();
         jPanel11 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
 
@@ -76,6 +77,16 @@ public class Block extends javax.swing.JFrame {
             }
         });
         jPanel1.add(metrosLineales1, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 191, 128, 43));
+
+        calcular.setBackground(new java.awt.Color(255, 255, 255));
+        calcular.setForeground(new java.awt.Color(0, 0, 255));
+        calcular.setText("Calcular");
+        calcular.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                calcularMouseClicked(evt);
+            }
+        });
+        jPanel1.add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, 90, 52));
 
         jPanel11.setBackground(new java.awt.Color(28, 78, 216));
 
@@ -124,46 +135,24 @@ public class Block extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_metrosLineales1ActionPerformed
 
+    private void calcularMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_calcularMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_calcularMouseClicked
+
     /**
      * @param args the command line arguments
      */
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
+    private javax.swing.JButton calcular;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JTextField metrosLineales;
     private javax.swing.JTextField metrosLineales1;
-    private javax.swing.JLabel txtResultado;
-    private javax.swing.JLabel txtResultado1;
-    private javax.swing.JLabel txtResultado2;
-    private javax.swing.JLabel txtResultado3;
-    private javax.swing.JLabel txtResultado4;
-    private javax.swing.JLabel txtResultado5;
-    private javax.swing.JLabel txtResultado6;
-    private javax.swing.JLabel txtResultado7;
-    private javax.swing.JLabel txtResultado8;
     // End of variables declaration//GEN-END:variables
 }

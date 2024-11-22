@@ -41,7 +41,7 @@ public class Inicio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 102, 0));
+        jPanel1.setBackground(new java.awt.Color(239, 246, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
@@ -49,7 +49,7 @@ public class Inicio extends javax.swing.JFrame {
         jLabel1.setText("ARCHIMETRICS");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 40, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setBackground(new java.awt.Color(0, 0, 153));
         jButton1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Block");
@@ -61,7 +61,7 @@ public class Inicio extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 398, 200, -1));
 
-        Solera.setBackground(new java.awt.Color(0, 0, 0));
+        Solera.setBackground(new java.awt.Color(0, 0, 153));
         Solera.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         Solera.setForeground(new java.awt.Color(255, 255, 255));
         Solera.setText("Solera");
@@ -77,7 +77,7 @@ public class Inicio extends javax.swing.JFrame {
         });
         jPanel1.add(Solera, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 148, 194, -1));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 0));
+        jButton3.setBackground(new java.awt.Color(0, 0, 153));
         jButton3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Columna");
@@ -88,7 +88,7 @@ public class Inicio extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 266, 194, -1));
 
-        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 153));
 
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));

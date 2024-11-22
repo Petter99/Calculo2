@@ -138,15 +138,30 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        Block venblock = new Block(calculadora);
+        venblock.setVisible(true);
+        venblock.setLocationRelativeTo(null);
+        venblock.setSize(800,600);
+        //asegura que el programa deje de ejecutarse al cerrar la ventana
+        venblock.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void SoleraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SoleraActionPerformed
-        // TODO add your handling code here:
+        Solera vensolera = new Solera(calculadora);
+        vensolera.setVisible(true);
+        vensolera.setLocationRelativeTo(null);
+        vensolera.setSize(800,600);
+        //asegura que el programa deje de ejecutarse al cerrar la ventana
+         vensolera.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
     }//GEN-LAST:event_SoleraActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        Peralte vencolum = new Peralte(calculadora);
+        vencolum.setVisible(true);
+        vencolum.setLocationRelativeTo(null);
+        vencolum.setSize(800,600);
+        //asegura que el programa deje de ejecutarse al cerrar la ventana
+        vencolum.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void SoleraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SoleraMouseClicked

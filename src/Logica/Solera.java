@@ -60,14 +60,11 @@ public class Solera {
     private String tipohierro(int num){
         String varilla;
         switch (num) {
-            case 2: varilla = "1/4";
-                break;
-            case 3: varilla = "3/8";
-                break;
-            case 4: varilla = "1/2";
-                break;
-            default:
-                throw new AssertionError();
+            case 1 -> varilla = "null";
+            case 2 -> varilla = "1/4";
+            case 3 -> varilla = "3/8";
+            case 4 -> varilla = "1/2";
+            default -> throw new AssertionError();
         }
         
         return varilla;

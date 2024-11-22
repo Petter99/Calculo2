@@ -263,6 +263,7 @@ public class Solera extends javax.swing.JFrame {
         double largo, base, Altura, Peralte, est;
         try {
             hierro = Integer.parseInt(noHierro.getText());
+            System.out.println(noHierro.getText());
             largo = Double.parseDouble(metrosLineales.getText());
             base = Double.parseDouble(ancho.getText());
             Peralte = Double.parseDouble(peralte.getText());
